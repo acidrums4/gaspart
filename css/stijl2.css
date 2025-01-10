@@ -1,0 +1,124 @@
+@media only screen and (max-width: 1000px){
+  .leftimage{  
+    width: 100%; 
+    font-size:  0;
+    float:  none; 
+    margin-left:0;
+    }
+  .righttext ul li{
+      list-style-type: none;
+      text-align:   center; 
+  }
+  .righttext{  
+    width: 100%;
+    padding-top: 20px;
+  }
+  #ulpadding{
+    padding-bottom: 10px;
+  }
+  h6{
+    text-align: center;
+    color: red;
+  }
+}
+
+.lefttext {
+  width: 50%;
+  max-width: 500px;
+  min-width: 200px;
+  padding: 10px;
+  margin-left: 12%;
+  padding-top: 160px;
+}
+
+.rightimage{
+  max-width: 40%;
+  float: right;
+  margin-right:4%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 100%;
+}
+.rightimage img{
+  width: 100%;
+}
+#inlijstingen{
+  min-height: vh;
+}
+#inlijstingenimage{
+  width: 250px;
+  margin: auto;
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity:  100%;
+}
+.rightimage:hover{
+  opacity: 60%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#inlijstingenimage img{
+  width: 100%;
+}
+@media only screen and (max-width: 1000px){
+  #imagegone{
+    display: none;
+  }
+  #socialmedia{
+    display: none;
+  }
+
+  .lefttext {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  }
+  .lefttext h1{
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  padding-top: 0px;
+  margin: auto;
+  text-align: center;
+  }
+  #inlijstingenimage{
+    display:block;
+  }
+  #inlijstingen{
+  }
+}
+
+
+
+#knop{
+  color: white;
+  height: 80px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #800000;
+  opacity: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+
+#knop:hover{
+  opacity: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 	50%;
+}
+
+
+
+
+
+/* CONTACT FORM */
+
