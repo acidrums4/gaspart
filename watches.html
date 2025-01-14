@@ -725,10 +725,12 @@
 			</div>
 		</div>
 
-		<dialog id="lightbox">
-			<button autofocus id="lightbox-close">Close</button>
-			<div id="lightbox-pictures"></div>
-			<div id="lightbox-text"></div>
+		<dialog>
+			<div id="lightbox">
+				<button autofocus id="lightbox-close">Close</button>
+				<div id="lightbox-pictures"></div>
+				<div id="lightbox-text"></div>
+			</div>
 		</dialog>
 
 		<footer>
@@ -764,11 +766,24 @@
 		</footer>
 	</body>
 	<script>
+	/*
+		* This is where the description for the image groups are placed. You can
+		* change name of the groups too, but be sure that they match exactly
+		* Those on the HTML data-category attributes. Else they won't work
+	*/
+	const lightbox_descriptions = {
+		'thing-1': 'This is a text that describes something about the set of images named thing-1. Pretty original name, huh? - Note this is the FIRST set!',
+		'thing-2': 'This is a text that describes something about the set of images named thing-2. Pretty original name, huh? - Note this is the SECOND set!',
+		'thing-3': 'This is a text that describes something about the set of images named thing-3. Pretty original name, huh? - Note this is the THIRD set!',
+	}
+
 	document.addEventListener('DOMContentLoaded', () =>
 	{
 		const lightbox = document.getElementById('lightbox')
 		const lightbox_close = document.getElementById('lightbox-close')
 		const lightbox_images = document.getElementById('lightbox-pictures')
+		const lightbox_text = document.getElementById('lightbox-text')
+		const dialog = lightbox.parentNode
 		const gallery = document.getElementById('gallery')
 		const gallery_items = [...gallery.children]
 
@@ -781,6 +796,10 @@
 				const category = event.target.parentNode.dataset.category
 				const images = document.createDocumentFragment()
 				const elements = document.querySelectorAll('[data-category=' + category + ']')
+
+				lightbox_images.replaceChildren()
+				lightbox_text.replaceChildren()
+
 				elements.forEach(e =>
 				{
 					const image = document.createElement('img')
@@ -788,13 +807,20 @@
 					image.alt = e.firstElementChild.alt
 					images.appendChild(image)
 				})
-				lightbox_images.replaceChildren()
+
+				if (category in lightbox_descriptions)
+				{
+					const text = document.createElement('p')
+					text.textContent = lightbox_descriptions[category]
+					lightbox_text.appendChild(text)
+				}
+
 				lightbox_images.appendChild(images)
-				lightbox.showModal()
+				dialog.showModal()
 			})
 		})
 
-		lightbox_close.addEventListener('click', event => lightbox.close())
+		lightbox_close.addEventListener('click', event => dialog.close())
 	})
 	</script>
 </html>

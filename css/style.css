@@ -2318,18 +2318,19 @@ h6 {
 	Lightbox
 */
 
-#lightbox {
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2rem;
-	width: calc(100% - 4em);
-	height: calc(100% - 4em);
+dialog {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 	max-width: unset;
 	max-height: unset;
-	margin: auto;
-	padding: 4em;
 	border: 0;
+	overflow: hidden;
 	pointer-events: none;
 	opacity: 0;
+	background-color: transparent;
 	transition: display 1s allow-discrete, overlay 1s allow-discrete, opacity 1s;
 
 	&::backdrop {
@@ -2339,34 +2340,90 @@ h6 {
 	}
 
 	&[open] {
-		display: grid;
+		display: flex;
 		opacity: 1;
 		pointer-events: auto;
 		@starting-style { opacity: 0 }
 		&::backdrop { opacity: .75 }
 	}
+}
+
+#lightbox {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+	gap: 1rem;
+	max-width: calc(100% - 2em);
+	max-height: calc(100% - 2em);
+	margin: auto;
+	padding: 1em;
+	background-color: canvas;
 
 	& button {
-		position: absolute;
+		grid-column: 1;
+		grid-row: 1;
+		justify-self: end;
 		padding: 1em;
 		border: 0;
-		top: 2em;
-		right: 2em;
 		appearance: none;
 		background-color: #800000;
 		color: white;
 		cursor: pointer;
 		transition: background-color .25s;
 		&:hover { background-color: #a00000 }
+
+		@media screen and (min-width: 768px) { grid-column: 2 }
+		@media screen and (min-width: 960px) { grid-column: 3 }
+	}
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: calc(100% - 4em);
+		max-height: calc(100% - 4em);
+		padding: 2em;
+	}
+
+	@media screen and (min-width: 960px) {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 4em;
 	}
 }
 
 #lightbox-pictures {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2rem;
+	grid-template-columns: 1fr;
+	grid-column: 1;
+	grid-row: 3;
+	gap: 1rem;
+	overflow-y: scroll;
+	& img { width: 100% }
 
-	& img {
-		width: 100%;
+	@media screen and (min-width: 768px) {
+		grid-column: 1/2;
+		grid-row: 2;
+		gap: 2rem;
 	}
+
+	@media screen and (min-width: 960px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column: 1/span 2;
+		gap: 2rem;
+	}
+}
+
+#lightbox-text {
+	grid-column: 1;
+	grid-row: 2;
+
+	& p {
+		padding-bottom: 0;
+		line-height: 1.75;
+	}
+
+	@media screen and (min-width: 768px) {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	@media screen and (min-width: 960px) { grid-column: 3 }
 }
