@@ -2378,6 +2378,7 @@ dialog {
 
 	@media screen and (min-width: 768px) {
 		grid-template-columns: repeat(2, 1fr);
+		gap: 2em;
 		max-width: calc(100% - 4em);
 		max-height: calc(100% - 4em);
 		padding: 2em;
@@ -2385,7 +2386,8 @@ dialog {
 
 	@media screen and (min-width: 960px) {
 		grid-template-columns: repeat(3, 1fr);
-		padding: 4em;
+		gap: 3em;
+		padding: 3em;
 	}
 }
 
