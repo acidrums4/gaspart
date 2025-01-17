@@ -934,9 +934,37 @@ footer p {
 }
 
 #daniel a {
+	position: relative;
 	display: block;
 	line-height: 0;
 	text-decoration: none;
+}
+
+#daniel a.multiple::before,
+#daniel a.multiple::after {
+	position: absolute;
+	display: block;
+	inset: 0;
+	content: '';
+}
+
+#daniel a.multiple::before {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 100%);
+	transition: opacity .25s;
+}
+
+#daniel a.multiple:hover::before { opacity: 0 }
+
+#daniel a.multiple::after {
+	margin: 12px 12px auto auto;
+	width: 24px;
+	height: 24px;
+	background-color: white;
+	mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"/><path d="M4.012 7.26a2.005 2.005 0 0 0 -1.012 1.737v10c0 1.1 .9 2 2 2h10c.75 0 1.158 -.385 1.5 -1"/><path d="M17 7h.01"/><path d="M7 13l3.644 -3.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644"/><path d="M15 12l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l2.644 2.644"/></svg>');
+	mask-size: cover;
 }
 
 #danielcontainer p {
@@ -1910,14 +1938,6 @@ h6 {
 	margin-bottom: 20px;
 }
 
-#daniel {
-	margin-top: ;
-}
-
-#danielcontainer {
-	padding-top:;
-}
-
 #imagegroep1 {
 	float: left;
 	padding: 0;
@@ -1932,14 +1952,6 @@ h6 {
 	overflow: hidden;
 	columns: 1;
 	width: 200px;
-}
-
-.projecttext2 h2 {
-	margin-top: px;
-}
-
-.projecttext h2 {
-	margin-top: ;
 }
 
 .gallery-item {
@@ -2317,6 +2329,8 @@ h6 {
 /*
 	Lightbox
 */
+
+html:has(dialog[open]) { overflow: hidden }
 
 dialog {
 	display: none;
