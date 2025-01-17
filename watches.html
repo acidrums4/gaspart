@@ -464,7 +464,7 @@
 			const gallery_items = [...gallery.children]
 			const have_multiple_images = lightbox_items.filter(e => e.images.length > 1)
 
-			have_multiple_images.forEach(set => document.querySelector('[data-category=' + set.id + ']').classList.add('multiple'))
+			have_multiple_images.forEach(s => document.querySelector('[data-category=' + s.id + ']').classList.add('multiple'))
 
 			gallery_items.forEach(item =>
 			{
@@ -472,7 +472,7 @@
 				{
 					event.stopPropagation()
 					event.preventDefault()
-					const category = event.target.parentNode.dataset.category
+					const category = event.target.dataset.category || event.target.parentNode.dataset.category
 					const images = document.createDocumentFragment()
 					const item_data = lightbox_items.find(e => e.id == category)
 
