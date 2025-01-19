@@ -568,5 +568,311 @@
 		[
 			"images/mei3.jpg"
 		]
+	},
+	{
+		"id": "thing-69",
+		"text": "This is a text that describes something about the set of images named thing-69. Pretty original name, huh?",
+		"images":
+		[
+			"images3/22510.jpg",
+			"images3/2258.jpg",
+			"images3/2259.jpg",
+			"images3/225k8.jpg",
+			"images3/225k9.jpg",
+			"images3/225k10.jpg"
+		]
+	},
+	{
+		"id": "thing-70",
+		"text": null,
+		"images":
+		[
+			"images3/22511.jpg",
+			"images3/22512.jpg",
+			"images3/22513.jpg",
+			"images3/225k11.jpg",
+			"images3/225k12.jpg",
+			"images3/225k13.jpg"
+		]
+	},
+	{
+		"id": "thing-71",
+		"text": null,
+		"images":
+		[
+			"images3/22514.jpg",
+			"images3/22516.jpg",
+			"images3/22517.jpg",
+			"images3/22518.jpg",
+			"images3/22519.jpg",
+			"images3/225k14.jpg",
+			"images3/225k16.jpg",
+			"images3/225k17.jpg",
+			"images3/225k18.jpg",
+			"images3/225k19.jpg"
+		]
+	},
+	{
+		"id": "thing-72",
+		"text": null,
+		"images":
+		[
+			"images3/2251.jpg",
+			"images3/225.jpg",
+			"images3/225k0.jpg",
+			"images3/225k1.jpg"
+		]
+	},
+	{
+		"id": "thing-73",
+		"text": null,
+		"images":
+		[
+			"images3/22520.jpg",
+			"images3/22521.jpg",
+			"images3/22522.jpg",
+			"images3/225k20.jpg",
+			"images3/225k21.jpg",
+			"images3/225k22.jpg"
+		]
+	},
+	{
+		"id": "thing-74",
+		"text": null,
+		"images":
+		[
+			"images3/22523.jpg",
+			"images3/22524.jpg",
+			"images3/225k23.jpg",
+			"images3/225k24.jpg"
+		]
+	},
+	{
+		"id": "thing-75",
+		"text": null,
+		"images":
+		[
+			"images3/22525.jpg",
+			"images3/22526.jpg",
+			"images3/22527.jpg",
+			"images3/225k25.jpg",
+			"images3/225k26.jpg",
+			"images3/225k27.jpg"
+		]
+	},
+	{
+		"id": "thing-76",
+		"text": null,
+		"images":
+		[
+			"images3/22528.jpg",
+			"images3/22529.jpg",
+			"images3/22530.jpg",
+			"images3/225k28.jpg",
+			"images3/225k29.jpg",
+			"images3/225k30.jpg"
+		]
+	},
+	{
+		"id": "thing-77",
+		"text": null,
+		"images":
+		[
+			"images3/2252.jpg",
+			"images3/225k2.jpg"
+		]
+	},
+	{
+		"id": "thing-78",
+		"text": null,
+		"images":
+		[
+			"images3/22531.jpg",
+			"images3/22532.jpg",
+			"images3/22533.jpg",
+			"images3/22534.jpg",
+			"images3/225k31.jpg",
+			"images3/225k32.jpg",
+			"images3/225k33.jpg",
+			"images3/225k34.jpg"
+		]
+	},
+	{
+		"id": "thing-79",
+		"text": null,
+		"images":
+		[
+			"images3/22535.jpg",
+			"images3/22536.jpg",
+			"images3/22537.jpg",
+			"images3/225k36.jpg",
+			"images3/225k37.jpg"
+		]
+	},
+	{
+		"id": "thing-80",
+		"text": null,
+		"images":
+		[
+			"images3/22538.jpg",
+			"images3/22539.jpg",
+			"images3/225k38.jpg",
+			"images3/225k39.jpg"
+		]
+	},
+	{
+		"id": "thing-81",
+		"text": null,
+		"images":
+		[
+			"images3/2253.jpg",
+			"images3/2254.jpg",
+			"images3/2255.jpg",
+			"images3/225k3.jpg",
+			"images3/225k4.jpg",
+			"images3/225k5.jpg"
+		]
+	},
+	{
+		"id": "thing-82",
+		"text": null,
+		"images":
+		[
+			"images3/22540.jpg",
+			"images3/22541.jpg",
+			"images3/22542.jpg",
+			"images3/225k40.jpg",
+			"images3/225k41.jpg",
+			"images3/225k42.jpg"
+		]
+	},
+	{
+		"id": "thing-83",
+		"text": null,
+		"images":
+		[
+			"images3/22543.jpg",
+			"images3/22544.jpg",
+			"images3/22545.jpg",
+			"images3/225k43.jpg",
+			"images3/225k44.jpg",
+			"images3/225k45.jpg"
+		]
+	},
+	{
+		"id": "thing-84",
+		"text": null,
+		"images":
+		[
+			"images3/22546.jpg",
+			"images3/225k46.jpg"
+		]
+	},
+	{
+		"id": "thing-85",
+		"text": null,
+		"images":
+		[
+			"images3/22547.jpg",
+			"images3/225k47.jpg"
+		]
+	},
+	{
+		"id": "thing-86",
+		"text": null,
+		"images":
+		[
+			"images3/22548.jpg",
+			"images3/22549.jpg",
+			"images3/225k48.jpg",
+			"images3/225k49.jpg"
+		]
+	},
+	{
+		"id": "thing-87",
+		"text": null,
+		"images":
+		[
+			"images3/22550.jpg",
+			"images3/22551.jpg",
+			"images3/22552.jpg",
+			"images3/225k50.jpg",
+			"images3/225k51.jpg",
+			"images3/225k52.jpg"
+		]
+	},
+	{
+		"id": "thing-88",
+		"text": null,
+		"images":
+		[
+			"images3/22553.jpg",
+			"images3/22554.jpg",
+			"images3/22555.jpg",
+			"images3/225k53.jpg",
+			"images3/225k54.jpg",
+			"images3/225k55.jpg"
+		]
+	},
+	{
+		"id": "thing-89",
+		"text": null,
+		"images":
+		[
+			"images3/22556.jpg",
+			"images3/22557.jpg",
+			"images3/22558.jpg",
+			"images3/225k56.jpg",
+			"images3/225k57.jpg",
+			"images3/225k58.jpg"
+		]
+	},
+	{
+		"id": "thing-90",
+		"text": null,
+		"images":
+		[
+			"images3/22559.jpg",
+			"images3/22560.jpg",
+			"images3/22561.jpg",
+			"images3/225k59.jpg",
+			"images3/225k60.jpg",
+			"images3/225k61.jpg"
+		]
+	},
+	{
+		"id": "thing-91",
+		"text": null,
+		"images":
+		[
+			"images3/22562.jpg",
+			"images3/22563.jpg",
+			"images3/22564.jpg",
+			"images3/225k62.jpg",
+			"images3/225k63.jpg",
+			"images3/225k64.jpg"
+		]
+	},
+	{
+		"id": "thing-92",
+		"text": null,
+		"images":
+		[
+			"images3/22565.jpg",
+			"images3/22566.jpg",
+			"images3/225k65.jpg",
+			"images3/225k66.jpg"
+		]
+	},
+	{
+		"id": "thing-93",
+		"text": null,
+		"images":
+		[
+			"images3/2256.jpg",
+			"images3/2257.jpg",
+			"images3/22k56.jpg",
+			"images3/22k57.jpg"
+		]
 	}
 ]

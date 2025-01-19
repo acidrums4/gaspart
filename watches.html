@@ -59,6 +59,131 @@
 				<!-- <div id='banner1'><img src="images/big.jpg" width="500px"></div>-->
 				<ul id="gallery">
 					<li>
+						<a href="images3/22510.jpg" data-category="thing-69">
+							<img src="images3/22510.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22511.jpg" data-category="thing-70">
+							<img src="images3/22511.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22514.jpg" data-category="thing-71">
+							<img src="images3/22514.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/2251.jpg" data-category="thing-72">
+							<img src="images3/2251.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22520.jpg" data-category="thing-73">
+							<img src="images3/22520.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22523.jpg" data-category="thing-74">
+							<img src="images3/22523.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22525.jpg" data-category="thing-75">
+							<img src="images3/22525.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22528.jpg" data-category="thing-76">
+							<img src="images3/22528.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/2252.jpg" data-category="thing-77">
+							<img src="images3/2252.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22531.jpg" data-category="thing-78">
+							<img src="images3/22531.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22535.jpg" data-category="thing-79">
+							<img src="images3/22535.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22538.jpg" data-category="thing-80">
+							<img src="images3/22538.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/2253.jpg" data-category="thing-81">
+							<img src="images3/2253.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22540.jpg" data-category="thing-82">
+							<img src="images3/22540.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22543.jpg" data-category="thing-83">
+							<img src="images3/22543.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22546.jpg" data-category="thing-84">
+							<img src="images3/22546.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22547.jpg" data-category="thing-85">
+							<img src="images3/22547.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22548.jpg" data-category="thing-86">
+							<img src="images3/22548.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22550.jpg" data-category="thing-87">
+							<img src="images3/22550.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22553.jpg" data-category="thing-88">
+							<img src="images3/22553.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22556.jpg" data-category="thing-89">
+							<img src="images3/22556.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22559.jpg" data-category="thing-90">
+							<img src="images3/22559.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22562.jpg" data-category="thing-91">
+							<img src="images3/22562.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/22565.jpg" data-category="thing-92">
+							<img src="images3/22565.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="images3/2256.jpg" data-category="thing-93">
+							<img src="images3/2256.jpg" alt="">
+						</a>
+					</li>
+					<li>
 						<a href="images/mei4.jpg" data-category="thing-1">
 							<img src="images/mei4.jpg" alt="Kader wit met witte fond met ontspiegeld museumglas. Foto's Inlijstingen Mei">
 						</a>
@@ -410,8 +535,8 @@
 		<dialog>
 			<div id="lightbox">
 				<button autofocus id="lightbox-close">Close</button>
-				<div id="lightbox-pictures"></div>
 				<div id="lightbox-text"></div>
+				<div id="lightbox-pictures"></div>
 			</div>
 		</dialog>
 
@@ -476,6 +601,8 @@
 					const images = document.createDocumentFragment()
 					const item_data = lightbox_items.find(e => e.id == category)
 
+					lightbox_images.classList.toggle('multiple', !!item.firstElementChild.classList.contains('multiple'))
+					lightbox_text.classList.toggle('text', !!(item_data.text && item_data.text !== null))
 					lightbox_images.replaceChildren()
 					lightbox_text.replaceChildren()
 
@@ -487,7 +614,7 @@
 						images.appendChild(image_node)
 					})
 
-					if (item_data.text)
+					if (item_data.text && item_data.text !== null)
 					{
 						const text = document.createElement('p')
 						text.textContent = item_data.text
